@@ -38,15 +38,15 @@
 					<li class="breadcrumb-item"><a href="tasks.html">Tasks</a></li>
 				</ol>
 			</nav>
-			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleTask">
 				New Task
 			</button>
 
-			  <table id="usuarios" class="table">
+			  <table id="taskUser" class="table">
 				<thead>
 				<tr>
-					<th scope="col">Name</th>
-					<th scope="col">ID</th>
+					<th scope="col">Task</th>
+					<th scope="col">Status</th>
 				</tr>
 				</thead>
 				<tbody>
@@ -63,7 +63,7 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleTask" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -75,25 +75,26 @@
                 <fieldset>
                   <legend>New task</legend>
                   <div class="mb-3">
-                    <label for="nombre" class="form-label">Assignment</label>
-                    <input type="text" id="Realizar" class="form-control" placeholder="enter task">
+                    <label for="assignment" class="form-label">Assignment</label>
+                    <input type="text" id="assignment" class="form-control" placeholder="enter task">
                   </div>
                   <div class="mb-3">
-                    <label for="Identificación" class="form-label">Status</label>
-                    <input type="text" id="Estado" class="form-control" placeholder="enter status">
+                    <label for="status" class="form-label">Status</label>
+                    <input type="text" id="status" class="form-control" placeholder="enter status">
                   </div>
                 </fieldset>
               </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-          <button id="nuevoUsuario" type="button" class="btn btn-primary">Add</button>
+          <button id="nuevaTask" type="button" class="btn btn-primary">Add</button>
         </div>
       </div>
     </div>
   </div>
 
 <!--Scripts-->
+
 <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
 		crossorigin="anonymous"></script>
 <script src="js/functions.js"></script>

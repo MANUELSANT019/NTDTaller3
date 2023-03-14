@@ -11,3 +11,17 @@ $('#nuevoUsuario').click(
     }
     
 );
+
+$('#nuevaTask').click(
+    function(){
+        var assignment=$('#assignment').val();
+        var status = $('#status').val();
+        $('#taskUser tr:last').after('<tr><td>'+assignment+'</td><td>'+ status+'</td></tr>');
+         $('#exampleTask').find('form')[0].reset();
+         $('#exampleTask').modal('toggle');
+       
+        
+        
+    }
+    
+);
